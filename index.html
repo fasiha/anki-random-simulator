@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anki Random Simulator</title>
+
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="c3.min.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" type="text/css" href="c3.min.css">
+  <style>
+    html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
+      font-family: Helvetica, "Helvetica Neue", Arial, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic", "小塚明朝 Pro L", serif;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<div id="chart"></div>
+
+<p>New Anki interval at each review (y axis) versus number of days since learned (x axis), assuming 90% of reviews result in "Good" and remaining "Again", a 100% interval modifier, and no missed days.
+</p>
+<button onclick="plotSimulation(runSimulation(parameters, interval, factor, delay, maxYears));">Rerun</button>
+
+<script src="ankirand.js" charset="utf-8"></script>
+
+</body>
+</html>
