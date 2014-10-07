@@ -20,7 +20,7 @@
 
 <div id="chart"></div>
 
-<p>New Anki interval at each review (y axis) versus number of days since learned (x axis), assuming 90% of reviews result in "Good" and remaining "Again", a 100% interval modifier, and no missed days. (<a href="https://github.com/fasiha/anki-random-simulator">Fork me on GitHub.</a>)
+<p>Monte Carlo simulation of review spacings chosen for one card by the Anki spaced-repetition system, assuming 90% of reviews are passed ("Good") and remaining 10% are failed ("Again"), 100% interval modifier, and studying every day. New interval (y-axis) versus number of days since learned (x-axis) <a href="https://github.com/fasiha/anki-random-simulator">Browse source code and get in touch via GitHub.</a>
 </p>
 <button onclick="plotSimulation(runSimulation(parameters, interval, factor, delay, maxYears));">Rerun</button>
 
